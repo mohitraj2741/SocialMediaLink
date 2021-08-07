@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SocialMediaLink</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register_now">register now</string>
+    <string name="already_have_account_login">Already have account?Login?</string>
+
+
+</resources>

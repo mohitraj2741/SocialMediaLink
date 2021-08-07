@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668632628689",
+    "project_id": "socialmedialink",
+    "storage_bucket": "socialmedialink.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668632628689:android:a1ee012e288fd0150d34f0",
+        "android_client_info": {
+          "package_name": "com.example.socialmedialink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668632628689-4al840s4ut0gou2di9dg4vbtocrnmuvb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHGOqw2k15276rypMq_hpejf61TuSkKiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668632628689-4al840s4ut0gou2di9dg4vbtocrnmuvb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
