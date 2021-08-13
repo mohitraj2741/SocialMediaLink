@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
+//import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -33,8 +33,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-//import com.google.firebase.database.DatabaseReference;
-//import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
@@ -229,7 +229,7 @@ public class LoginActivity extends AppCompatActivity {
 
                             FirebaseUser user = mAuth.getCurrentUser();
                             //user is logged in, start profile activity
-                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
                             finish();
 
                         } else {
@@ -296,7 +296,7 @@ public class LoginActivity extends AppCompatActivity {
                             String uid = user.getUid();
 
                             //when user is registered store userinfo in firebase using hashmap
-                          /*  HashMap<Object,String> hashMap= new HashMap<>();
+                            HashMap<Object,String> hashMap= new HashMap<>();
                             //put the info in hashmap
                             hashMap.put("email",email);
                             hashMap.put("uid",uid);
@@ -310,14 +310,14 @@ public class LoginActivity extends AppCompatActivity {
                             //path to store user data named "Users"
                             DatabaseReference reference= database.getReference("Users");
                             //put data within hashmap in database
-                            reference.child(uid).setValue(hashMap);*/
+                            reference.child(uid).setValue(hashMap);
 
 
 
                             //show user email in toast
                             Toast.makeText(LoginActivity.this, ""+user.getEmail(), Toast.LENGTH_SHORT).show();
                             //go to profile activity
-                            startActivity(new Intent(LoginActivity.this, ProfileActivity.class));
+                            startActivity(new Intent(LoginActivity.this, DashboardActivity.class));
                             finish();
                             //   updateUI(user);
                         } else {
